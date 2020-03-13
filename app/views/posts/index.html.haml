@@ -1,26 +1,57 @@
--# .header
--#   .header__name
--#     Daichi Takakusaki
--#   .header__kanji
--#     web designer
--#   .header__line
--#   .header__btn 
--#     get in touch
 
--#   .header__mywork
--#     .header__mywork__box1
--#       Filmce
--#     .header__mywork__box2
--#       Chat-space
--#     .header__mywork__box3
--#       Furima-app
+.header 
+  .header__box
+    .header__box__title
+      =image_tag("doctor.png",width:"50",height:"50",class:"header__box__title__img")
+      .header__box__title__name
+        D.Takakusaki
+    .header__box__icon
+      .header__box__icon__twitter
+        = link_to "https://twitter.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'twitter')
+      .header__box__icon__instagram
+        = link_to "https://www.instagram.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'instagram')
 
--# .footer
+  .header__menu
+    .header__menu__about
+      About
+    .header__menu__works
+      Works
+    .header__menu__blog
+      Blogs
+    .header__menu__contact
+      Contact
 
 .container
-  .box
-    %h1 particles.js Demo
+  .container__box
+    Daichi Takakusaki
+    %br
+    web designer
     %p
-      %a{:href => "https://marcbruederlin.github.io/particles.js/"} Website
-%canvas.background
-%script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}
+      %a{:href => "https://marcbruederlin.github.io/particles.js/"} Get in touch
+  
+.work
+  .work__word
+    TECH:EXPERT's WORK
+  .work__box
+    .work__box__box1 
+      Our Blog
+    .work__box__box2
+      Chat-Space
+    .work__box__box3
+      Furima-app
+
+.work
+  .work__word
+    PERSONAL WORK
+  .work__box
+    .work__box__box3
+      Filmce
+
+.footer
+  .footer__work
+    @D.Takakusaki ALL rights reserved.
+
+-# %canvas.background
+-# %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}
