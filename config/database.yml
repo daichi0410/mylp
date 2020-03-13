@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
-  database: mylp_production
-  username: mylp
-  password: <%= ENV['MYLP_DATABASE_PASSWORD'] %>
+  # database: mylp_production
+  # username: mylp
+  # password: <%= ENV['MYLP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
