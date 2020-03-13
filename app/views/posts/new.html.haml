@@ -1,0 +1,60 @@
+
+.header 
+  .header__box
+    .header__box__title
+      =image_tag("doctor.png",width:"50",height:"50",class:"header__box__title__img")
+      .header__box__title__name
+        =link_to root_path,class:"header__box__title__name__btn" do
+          D.Takakusaki
+    .header__box__icon
+      .header__box__icon__twitter
+        = link_to "https://twitter.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'twitter')
+      .header__box__icon__instagram
+        = link_to "https://www.instagram.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'instagram')
+
+  .header__menu
+    .header__menu__about
+      =link_to "#",class:"header__menu__about__btn" do
+        About
+    .header__menu__works
+      Works
+    .header__menu__blog
+      Blogs
+    .header__menu__contact
+      Contact
+
+.me
+  .me__word
+    About
+  .me__box
+    東京にてプログラミングスクール卒業後Web制作希望の就活生です。
+    %br
+    2016年〜2018年：繊維商社にてカンボジア・ベトナムに駐在し、フリーランスエンジニアと出会う。
+    %br
+    2019年〜2020年：プログラミングスクールにてRuby on Rails,JavaScript(jQuery),Node.js,Capistranoを中心に勉強。
+  .me__big
+    .me__big__img
+      =image_tag("me.png",width:"200",height:"200")
+    .me__big__text
+      名称 ：D.Takakusaki
+      %br
+      %br
+      所在地 ：東京都お問い合わせ先 ：daichi.wk@gmail.com
+      %br
+      %br
+      事業内容 ：Web制作におけるディレクション、デザイン、HTML・CSSコーディング等
+      %br
+      %br
+      高草木　大地　Takakusaki Daichi
+      %br
+      %br
+      Twitter:@Filmce2
+      %br
+      %br
+      Instagram:noadaisuki1118
+
+.footer
+  .footer__work
+    @D.Takakusaki ALL rights reserved.

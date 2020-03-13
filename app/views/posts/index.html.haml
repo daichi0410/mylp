@@ -4,7 +4,8 @@
     .header__box__title
       =image_tag("doctor.png",width:"50",height:"50",class:"header__box__title__img")
       .header__box__title__name
-        D.Takakusaki
+        =link_to root_path,class:"header__box__title__name__btn" do
+          D.Takakusaki
     .header__box__icon
       .header__box__icon__twitter
         = link_to "https://twitter.com/", class: "header__box__icon__btn" do
@@ -15,7 +16,8 @@
 
   .header__menu
     .header__menu__about
-      About
+      =link_to new_post_path,class:"header__menu__about__btn" do
+        About
     .header__menu__works
       Works
     .header__menu__blog
@@ -35,12 +37,21 @@
   .work__word
     TECH:EXPERT's WORK
   .work__box
-    .work__box__box1 
-      Our Blog
+    .work__box__box1
+      Pictweet
+      .work__box__box1__img
+        =link_to image_tag("pictweet.png", width:"400",height:"300")
     .work__box__box2
       Chat-Space
+      .work__box__box2__img
+        =link_to image_tag("chatspace.png", width:"400",height:"300"),"http://52.199.55.128/"
     .work__box__box3
       Furima-app
+      .work__box__box3__img
+        =link_to image_tag("furima.png", width:"400",height:"300"),"http://3.115.170.111/"
+
+
+
 
 .work
   .work__word
@@ -48,10 +59,12 @@
   .work__box
     .work__box__box3
       Filmce
+      .work__box__box3__img
+        =link_to image_tag("filmce.png", width:"400",height:"300"),"http://18.178.217.176/"
 
 .footer
   .footer__work
     @D.Takakusaki ALL rights reserved.
 
--# %canvas.background
--# %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}
+%canvas.background
+%script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}

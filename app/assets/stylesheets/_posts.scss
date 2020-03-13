@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Shadows+Into+Light&display=swap");
 
+a{
+  text-decoration: none;
+}
+
 .background {
   position: absolute;
   display: block;
@@ -39,6 +43,9 @@ position: relative;
   position: absolute;
   top: 8px;
   left: 50px;
+  &__btn{
+    color: black;
+  }
 }
 }
 &__icon{
@@ -61,6 +68,11 @@ position: relative;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  &__about{
+    &__btn{
+      color: black;
+    }
+  }
 }
 }
 
@@ -89,9 +101,12 @@ position: relative;
   height: 500px;
   width: 100%;
   &__word{
+    text-align: center;
+    width: 280px;
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 25px;
+    border-bottom: 2px solid skyblue;
   }
   &__box{
     display: flex;
@@ -100,18 +115,18 @@ position: relative;
     width: 400px;
     height: 400px;
     margin-right: 30px;
-    background-color: red;
+    // background-color: red;
   }
   &__box2{
     width: 400px;
     height: 400px;
     margin-right: 30px;
-    background-color: red;
+    // background-color: red;
   }
   &__box3{
     width: 400px;
     height: 400px;
-    background-color: red;
+    // background-color: red;
   }
 }
 }
@@ -137,4 +152,30 @@ position: relative;
 
 a {
   color: #0bd;
+}
+
+.me{
+  &__word{
+    background-color: white;
+    font-size: 50px;
+    color: lightgrey;
+    padding-top: 100px;
+    padding-left: 200px;
+  }
+  &__box{
+    background-color: white;
+    font-size:15px;
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+  &__big{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    &__img{
+      padding-right: 100px;
+    }
+  }
 }
