@@ -116,17 +116,40 @@ position: relative;
     height: 400px;
     margin-right: 30px;
     // background-color: red;
+    &__img{      
+    }
+    &__img:hover{
+      background-color:skyblue;
+      transition: all .5s;
+      z-index: 1;
+    }
   }
   &__box2{
     width: 400px;
     height: 400px;
     margin-right: 30px;
     // background-color: red;
+    &__img{      
+    }
+    &__img:hover{
+      background-color:skyblue;
+      transition: all .5s;
+      z-index: 1;
+    }
+
   }
   &__box3{
     width: 400px;
     height: 400px;
     // background-color: red;
+    &__img{      
+    }
+    &__img:hover{
+      background-color:skyblue;
+      transition: all .5s;
+      z-index: 1;
+    }
+
   }
 }
 }
