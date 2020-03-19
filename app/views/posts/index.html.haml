@@ -17,13 +17,15 @@
   .header__menu
     .header__menu__about
       =link_to new_post_path,class:"header__menu__about__btn" do
-        About
+        Me
     .header__menu__works
-      Works
+      =link_to works_path,class:"header__menu__about__btn" do
+        Works
     .header__menu__blog
       Blogs
     .header__menu__contact
-      Contact
+      =link_to edit_post_path(id:1),class:"header__menu__about__btn" do
+        Contact
 
 .container
   .container__box
@@ -95,83 +97,106 @@
       =image_tag("https://cdn.svgporn.com/logos/html-5.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.learning{"data-skill" => "html"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/haml.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.haml.haml-1{"data-skill" => "haml"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/css-3.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.css.css-1{"data-skill" => "CSS"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/ruby.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.ruby.ruby-1{"data-skill" => "ruby"}
+          .skills__box__app__bar__1
+            70%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/rails.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.rails.rails-1{"data-skill" => "Rails"}
+          .skills__box__app__bar__1
+            60%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/javascript.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.js.js-1{"data-skill" => "javascript"}
+          .skills__box__app__bar__1
+            40%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/jquery.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.jq.jq-1{"data-skill" => "jQuery"}
+          .skills__box__app__bar__1
+            40%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/swift.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.swift.swift-1{"data-skill" => "Swift"}
+          .skills__box__app__bar__1
+            10%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/mysql.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.mysql.mysql-1{"data-skill" => "mysql"}
+          .skills__box__app__bar__1
+            60%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/aws.svg",width:"40",height:"40")
       .skills__box__app__bar
-        .bar.front.expert{"data-skill" => "aws"}
+        .bar.front.expert{"data-skill" => "AWS"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/aws-ec2.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.front.expert{"data-skill" => "EC2"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/aws-s3.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.front.expert{"data-skill" => "S3"}
+          .skills__box__app__bar__1
+            80%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/capistrano.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.cap.cap-1{"data-skill" => "Capistrano"}
+          .skills__box__app__bar__1
+            60%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/heroku-icon.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.hk.hk-1{"data-skill" => "Heroku"}
+          .skills__box__app__bar__1
+            50%
 
     .skills__box__app
       =image_tag("https://cdn.svgporn.com/logos/docker-icon.svg",width:"40",height:"40")
       .skills__box__app__bar
         .bar.dk.dk-1{"data-skill" => "Docker"}
-
-.ben
-
-
-
-
-
+          .skills__box__app__bar__1
+            10%
 
 .footer
   .footer__work

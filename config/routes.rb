@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   root "posts#index"
 
-  resources :posts, only:[:index, :new]
+  resources :posts
+  resources :works
 end

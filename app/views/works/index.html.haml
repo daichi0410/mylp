@@ -1,0 +1,74 @@
+.header 
+  .header__box
+    .header__box__title
+      =image_tag("doctor.png",width:"50",height:"50",class:"header__box__title__img")
+      .header__box__title__name
+        =link_to root_path,class:"header__box__title__name__btn" do
+          D.Takakusaki
+    .header__box__icon
+      .header__box__icon__twitter
+        = link_to "https://twitter.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'twitter')
+      .header__box__icon__instagram
+        = link_to "https://www.instagram.com/", class: "header__box__icon__btn" do
+          = icon('fab', 'instagram')
+
+  .header__menu
+    .header__menu__about
+      =link_to new_post_path,class:"header__menu__about__btn" do
+        Me
+    .header__menu__works
+      Works
+    .header__menu__blog
+      Blogs
+    .header__menu__contact
+      =link_to edit_post_path(id:1),class:"header__menu__about__btn" do
+        Contact
+
+
+.me
+  .me__word
+    Works
+
+.works
+  .works__app
+    .works__app__img
+      =link_to image_tag("pictweet.png", width:"800",height:"600"),"https://picturetweetapp.herokuapp.com/"
+    .works__app__title
+      Pictweet
+    .works__app__text
+      Direction / Coding / Haml,scss,Ruby on Rails,heroku
+    .works__app__explain
+      Instagramの様な画像と文字をユーザー間で投稿・共有していくシンプルなアプリを開発しました。
+
+  .works__app
+    .works__app__img
+      =link_to image_tag("chatspace.png", width:"800",height:"600"),"http://52.199.55.128/"
+    .works__app__title
+      Chat-Space
+    .works__app__text
+      Direction / Coding / Haml,scss,JavaScript,jQuery,Ruby on Rails,AWS(EC2,S3)
+    .works__app__explain
+      ユーザー間で使える非同期通信可能なチャットアプリケーションです。
+  .works__app
+    .works__app__img
+      =link_to image_tag("furima.png", width:"800",height:"600"),"http://3.115.170.111/"
+    .works__app__title
+      Furima-app
+    .works__app__text
+      Direction / Design / Coding / Haml,scss,JavaScript,jQuery,Ruby on Rails,AWS(EC2,S3),Payjp
+    .works__app__explain
+      売りたい商品をフリーマーケット形式で出品できるフリマアプリを開発致しました。
+  .works__app
+    .works__app__img
+      =link_to image_tag("filmce.png", width:"800",height:"600"),"http://18.178.217.176/"
+    .works__app__title
+      Filmce
+    .works__app__text
+      Direction / Design / Coding / Haml,scss,JavaScript,jQuery,Ruby on Rails,AWS(EC2,S3),Payjp
+    .works__app__explain
+      映画作品を軸とした映画レビューサイトではなく、ユーザーの口コミを基にした映画レビューアプリです。
+
+.footer
+  .footer__work
+    @D.Takakusaki ALL rights reserved.
