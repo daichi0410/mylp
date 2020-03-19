@@ -22,7 +22,8 @@
       =link_to works_path,class:"header__menu__about__btn" do
         Works
     .header__menu__blog
-      Blogs
+      =link_to new_work_path(id:1),class:"header__menu__about__btn" do
+        Blogs
     .header__menu__contact
       =link_to edit_post_path(id:1),class:"header__menu__about__btn" do
         Contact
