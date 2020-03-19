@@ -457,4 +457,16 @@ a {
   width: calc(80% - 10px);
 }
 
-
+.footer1{
+  margin-top: 300px;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  &__work{
+    margin-right: 20px;
+    line-height: 60px;
+  }
+  }
