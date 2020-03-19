@@ -27,13 +27,41 @@
 
 .container
   .container__box
-    Daichi Takakusaki
-    %br
-    web designer
-    %p
-      %a{:href => "https://marcbruederlin.github.io/particles.js/"} Get in touch
-  
+    Daichi's Site
+    -# %br
+    -# web designer
+    -# %p
+    -#   %a{:href => "https://marcbruederlin.github.io/particles.js/"} Get in touch
+
+.service
+  .service__title
+    Service
+  .service__box
+    .service__box__direction
+      .service__box__direction__eng
+        Direction
+      .service__box__direction__icon
+        =icon("fas","pencil-alt")
+      .service__box__direction__explain
+        お客様の要望をヒアリングし、現状の問題点を洗い出し、効果的なプランを作成いたします。制作ではデザインに入る前の事前の準備が特に重要になります。何が必要で何が必要でないのかを判断し、費用対効果の高いWebサイトを作るための土台を作ります。
+    .service__box__design
+      .service__box__design__eng
+        Design
+      .service__box__design__icon
+        =icon("fas","palette")
+      .service__box__design__explain
+        ヒアリングに基づいたプランに沿って、デザインを作成いたします。人の使うものであることを常に意識して、使う人が迷わない、目的を達成できるデザインを心がけています。インターフェースの重要性が増す中でデザインの役割を理解し、そのプランに最適な提案をさせていただきます。
+    .service__box__coding
+      .service__box__coding__eng
+        Coding
+      .service__box__coding__icon
+        =icon("fas","laptop")
+      .service__box__coding__explain
+        デザインの意図を理解し、動きや効果を適切に使用することでWebサイトの仕上がりは大きく変わります。スマートフォンサイト、ワードプレスを使用した更新性の高いサイト、Javascriptを使用した動きのあるサイトなど、様々なサイトのコーディングを行っております。
+    
 .work
+  .work__title
+    Works
   .work__word
     TECH:EXPERT's WORK
   .work__box
@@ -50,9 +78,6 @@
       .work__box__box3__img
         =link_to image_tag("furima.png", width:"400",height:"300"),"http://3.115.170.111/"
 
-
-
-
 .work
   .work__word
     PERSONAL WORK
@@ -62,9 +87,102 @@
       .work__box__box3__img
         =link_to image_tag("filmce.png", width:"400",height:"300"),"http://18.178.217.176/"
 
+.skills
+  .skills__title
+    Skills
+  .skills__box
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/html-5.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.learning{"data-skill" => "html"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/haml.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.haml.haml-1{"data-skill" => "haml"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/css-3.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.css.css-1{"data-skill" => "CSS"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/ruby.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.ruby.ruby-1{"data-skill" => "ruby"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/rails.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.rails.rails-1{"data-skill" => "Rails"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/javascript.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.js.js-1{"data-skill" => "javascript"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/jquery.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.jq.jq-1{"data-skill" => "jQuery"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/swift.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.swift.swift-1{"data-skill" => "Swift"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/mysql.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.mysql.mysql-1{"data-skill" => "mysql"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/aws.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.front.expert{"data-skill" => "aws"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/aws-ec2.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.front.expert{"data-skill" => "EC2"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/aws-s3.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.front.expert{"data-skill" => "S3"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/capistrano.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.cap.cap-1{"data-skill" => "Capistrano"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/heroku-icon.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.hk.hk-1{"data-skill" => "Heroku"}
+
+    .skills__box__app
+      =image_tag("https://cdn.svgporn.com/logos/docker-icon.svg",width:"40",height:"40")
+      .skills__box__app__bar
+        .bar.dk.dk-1{"data-skill" => "Docker"}
+
+.ben
+
+
+
+
+
+
 .footer
   .footer__work
     @D.Takakusaki ALL rights reserved.
 
-%canvas.background
-%script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}
+
+
+-# キラキラする奴
+-# %canvas.background
+-# %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"}
+
+-# アイアンマンの胸
+-# .bluelight
+  %a{:href => "#"} HOVER
