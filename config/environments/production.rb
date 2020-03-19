@@ -64,7 +64,7 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "mylp_#{Rails.env}"
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: 'アプリ名.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'mylp.herokuapp.com' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     user_name: ENV['SENDGRID_USERNAME'],
@@ -76,7 +76,7 @@ Rails.application.configure do
     enable_starttls_auto: true
     }
   config.action_mailer.perform_caching = false
-  
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
