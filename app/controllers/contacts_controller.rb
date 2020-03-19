@@ -5,7 +5,9 @@ class ContactsController < ApplicationController
   end
 
   def create
+    # binding.pry
     @contact = Contact.new(contact_params)
+    # binding.pry
     if @contact.save
       ContactMailer.contact_mail(@contact).deliver
       flash[:success] = 'お問い合わせを受け付けました'
