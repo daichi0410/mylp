@@ -1,17 +1,14 @@
-window.onload = function() {
-  Particles.init({
-    selector: '.background',
-    sizeVariations: 60,
-    color: [
-      '#0bd', 'rgba(0,187,221,.5)', 'rgba(0,187,221,.2)'
-    ]
+$(function(){
+  console.log("hello");
+  　$(window).scroll(function (){
+      $('.effect-fade').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight){
+              $(this).addClass('effect-scroll');
+          }
+      });
+  　});
   });
-  var particles = Particles.init({
-    selector: '.background',
-  sizeVariations: 15,
-  color: ['#00bbdd', '#404B69', '#DBEDF3'],
-  connectParticles: true
-});
-};
-
 

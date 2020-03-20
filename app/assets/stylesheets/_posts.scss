@@ -4,7 +4,24 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Shadows+Into+Light&display=swap");
 
 a{
+  position: relative;
+  display: inline-block;
   text-decoration: none;
+}
+a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform: scale(1, 1);
 }
 
 // .background {
@@ -192,39 +209,18 @@ position: relative;
     height: 400px;
     margin-right: 30px;
     // background-color: red;
-    &__img{      
-    }
-    &__img:hover{
-      background-color:skyblue;
-      transition: all .5s;
-      z-index: 1;
-    }
   }
   &__box2{
     width: 400px;
     height: 400px;
     margin-right: 30px;
     // background-color: red;
-    &__img{      
-    }
-    &__img:hover{
-      background-color:skyblue;
-      transition: all .5s;
-      z-index: 1;
-    }
 
   }
   &__box3{
     width: 400px;
     height: 400px;
     // background-color: red;
-    &__img{      
-    }
-    &__img:hover{
-      background-color:skyblue;
-      transition: all .5s;
-      z-index: 1;
-    }
 
   }
 }
@@ -315,6 +311,21 @@ a {
     }
   }
 }
+
+.effect-fade {
+  opacity : 0;
+  // -webkit-transition: all 1s;
+  // -moz-transition: all 1s;
+  // -o-transition: all 1s;
+  // -ms-transition: all 1s;
+  // transition: all 3s;
+}
+.effect-fade.effect-scroll {
+  opacity : 1;
+  transform: translateY(30px);
+  transition: 3s;
+}
+
 
 .ben{
   width: 50%;
