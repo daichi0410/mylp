@@ -368,10 +368,10 @@ a {
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
-  animation: load 5s 0s;
-  -webkit-animation: load 5s 0s;
-  -moz-animation: load 5s 0s;
-  -o-animation: load 5s 0s;
+  animation: load 30s 0s;
+  -webkit-animation: load 30s 0s;
+  -moz-animation: load 30s 0s;
+  -o-animation: load 30s 0s;
 }
 
 .bar.front::before{
